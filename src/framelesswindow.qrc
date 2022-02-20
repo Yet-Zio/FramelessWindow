@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="app_icon.png">icons/app_icon.png</file>
+    <file alias="app_close.png">icons/app_close.png</file>
+    <file alias="app_max.png">icons/app_max.png</file>
+    <file alias="app_rest.png">icons/app_rest.png</file>
+    <file alias="app_min.png">icons/app_min.png</file>
+    <file alias="rollup.png">icons/rollup.png</file>
+    <file alias="rolldown.png">icons/rolldown.png</file>
+    <file>framelesswindow.css</file>
+  </qresource>
+</RCC>
