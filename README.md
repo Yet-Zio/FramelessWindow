@@ -24,7 +24,7 @@ The frameless window consists of a title bar, central widget and bottom bar, all
 The look and feel of the window is derived from the **"framelesswindow.css"** file, mostly pointing towards a dark theme.
 
 ## Documentation
-The frameless window class and its methods have been clearly documented in the **"framelesswindow.h"** header file in doxygen format.
+The frameless window class and its methods have been clearly documented in the **"framelesswindow.h"** header file with doxygen format. Latex and PDF files are also provided in [docs](docs) directory.
 
 
 ## Demo

@@ -1,0 +1,130 @@
+\hypertarget{framelesswindow_8h_source}{}\doxysection{framelesswindow.\+h}
+\mbox{\hyperlink{framelesswindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef FRAMELESSWINDOW\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define FRAMELESSWINDOW\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QFile>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QMouseEvent>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QGraphicsDropShadowEffect>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QMenuBar>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QSizeGrip>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QHoverEvent>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QSysInfo>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QRegularExpression>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}}\{}
+\DoxyCodeLine{15     \textcolor{keyword}{class }\mbox{\hyperlink{class_frameless_window}{FramelessWindow}};}
+\DoxyCodeLine{16 \}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_frameless_window}{FramelessWindow}}: \textcolor{keyword}{public} QWidget\{}
+\DoxyCodeLine{22     Q\_OBJECT}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{29     \textcolor{keyword}{enum} \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8}{TitleMode}} \{}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8a986545883f765bf67c38d572547d71ac}{CleanTitle}}, }
+\DoxyCodeLine{31         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8a7badd25c7123e7b149d802435e1010bc}{OnlyCloseButton}}, }
+\DoxyCodeLine{32         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8ac0db404cda41601955a29b2ed22aaca0}{IconOff}}, }
+\DoxyCodeLine{33         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8a0afae7dd7774a8266eadaaf2a7070d1b}{MaxMinRollOff}}, }
+\DoxyCodeLine{34         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8a533c32d0bbbb2198168d57604bcb25e5}{MaxMinOff}}, }
+\DoxyCodeLine{35         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8abac97c080768005b907abb2ae4f5e0b9}{FullScreenMode}}, }
+\DoxyCodeLine{36         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8a753f5454687526862b9536a8d1a7987e}{MaxOff}}, }
+\DoxyCodeLine{37         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8a8a163762fdfbfe833951cbb932d31768}{MinOff}}, }
+\DoxyCodeLine{38         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8a7f438b31779eaaf546debde2cefce55f}{RollOff}}, }
+\DoxyCodeLine{39         \mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8a749b8880a7eb6972e5edc8d0d71720a6}{FullTitle}}  \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_frameless_window_a28bd5c108d7b21de2890e899d854622b}{FramelessWindow}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_aecc800bf7cffa6c3a5f26335f09a129b}{dropShadow}}(\textcolor{keywordtype}{bool} on = \textcolor{keyword}{true});}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_frameless_window_aebde5dd4e4bf277efce20e0807025cd2}{getGlobalState}}()\{}
+\DoxyCodeLine{60         \textcolor{keywordflow}{return} GLOBAL\_STATE;}
+\DoxyCodeLine{61     \}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_frameless_window_aa2e38e85e7b9662e34d580799cf05b06}{getFullSCState}}()\{}
+\DoxyCodeLine{69         \textcolor{keywordflow}{return} FULLSC\_STATE;}
+\DoxyCodeLine{70     \}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{77     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_frameless_window_aa682b790fa27f91ce3d6bea79c3cfef9}{getRollState}}()\{}
+\DoxyCodeLine{78         \textcolor{keywordflow}{return} ROLL\_STATE;}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{86     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_afea6e8ca08735aed566b463061898576}{setTitle}}(QString title);}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a5de038bf84058dc45366d546f2194514}{setTitleFont}}(QFont font);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a0e69b6a3e8319ddffe3c093252394896}{setTitleStyle}}(QString stylesheet);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{107     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a8c001b2a6910afbf97ec7edecea2b5f8}{setTitleBarMode}}(\mbox{\hyperlink{class_frameless_window_a0e5ab6bc331dd101d2e60332745f28b8}{TitleMode}} flag);}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{114     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a3d82a16408a7133aa3ec7d668d0540cd}{setAppIcon}}(QIcon appicon);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{121     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a76d28fe6c118a8272533d681a1b1f2b2}{setMinIcon}}(QIcon minicon);}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{129     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a6dfb5c60a1ab1dc87adda3703d777ae1}{setMaxIcon}}(QString maxres = \textcolor{stringliteral}{"{}:/app\_max.png"{}}, QString restres = \textcolor{stringliteral}{"{}:/app\_rest.png"{}});}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{137     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a841012454f3e84956d95ea85c9dff892}{setRollIcon}}(QString rollup = \textcolor{stringliteral}{"{}:/rollup.png"{}}, QString rolldown = \textcolor{stringliteral}{"{}:/rolldown.png"{}});}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{144     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_af6bc016d439610e27c05b49925ade02a}{setCloseIcon}}(QIcon closeicon);}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{152     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a7914c86b0a93ba5b104de598245c3ca2}{setMenuBar}}(QMenuBar *menuBar = \textcolor{keyword}{nullptr}, \textcolor{keywordtype}{bool} hidden = \textcolor{keyword}{false});}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{159     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a5884057d657dad06edca9dd29b9c4f00}{hideMenuBar}}(\textcolor{keywordtype}{bool} y = \textcolor{keyword}{true});}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{166     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a10d622c36a4ac0413098751b25fd8d4c}{setCentralWidget}}(QWidget *centralWidget);}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168 \textcolor{keyword}{private}:}
+\DoxyCodeLine{169     Ui::FramelessWindow *ui = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{175     \textcolor{keywordtype}{void} setupFrWindow();}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{181     \textcolor{keywordtype}{void} setupTitleButtons();}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{187     \textcolor{keywordtype}{void} setupSizeRetain();}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{193     \textcolor{keywordtype}{void} setupSizeGrip();}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195     \textcolor{keywordtype}{void} keyPressEvent(QKeyEvent *event);}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197     \textcolor{keywordtype}{void} mousePressEvent(QMouseEvent *event);}
+\DoxyCodeLine{198     \textcolor{keywordtype}{void} mouseMoveEvent(QMouseEvent *event);}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200     \textcolor{keywordtype}{void} hoverMove(QHoverEvent *event);}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202     \textcolor{keywordtype}{bool} event(QEvent *e);}
+\DoxyCodeLine{203 }
+\DoxyCodeLine{204     \textcolor{keywordtype}{int} GLOBAL\_STATE = 0; }
+\DoxyCodeLine{205     \textcolor{keywordtype}{int} FULLSC\_STATE = 0; }
+\DoxyCodeLine{206     \textcolor{keywordtype}{int} ROLL\_STATE = 0; }
+\DoxyCodeLine{209     QPoint dragPos; }
+\DoxyCodeLine{210     QPoint localPos; }
+\DoxyCodeLine{212     \textcolor{keywordtype}{int} resizeLookout = 15; }
+\DoxyCodeLine{214     QRect normalRect; }
+\DoxyCodeLine{215     QSysInfo *sysinfo; }
+\DoxyCodeLine{217     QFile file\{\textcolor{stringliteral}{"{}:/framelesswindow.css"{}}\}; }
+\DoxyCodeLine{218     QString filedata; }
+\DoxyCodeLine{220     QRegularExpression titleMaxExp = QRegularExpression(\textcolor{stringliteral}{"{}(titleMaxStyle.*\{[\(\backslash\)\(\backslash\)s\(\backslash\)\(\backslash\)S]*?\})"{}}); }
+\DoxyCodeLine{221     QString titleMaxStyle; }
+\DoxyCodeLine{223     QString m\_maxres = \textcolor{stringliteral}{"{}:/app\_max.png"{}}; }
+\DoxyCodeLine{224     QString m\_restres = \textcolor{stringliteral}{"{}:/app\_rest.png"{}}; }
+\DoxyCodeLine{226     QString m\_rollup = \textcolor{stringliteral}{"{}:/rollup.png"{}}; }
+\DoxyCodeLine{227     QString m\_rolldown = \textcolor{stringliteral}{"{}:/rolldown.png"{}}; }
+\DoxyCodeLine{229 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{234     \textcolor{keywordtype}{void} maximize\_restore();}
+\DoxyCodeLine{235 }
+\DoxyCodeLine{240     \textcolor{keywordtype}{void} fullsc\_restore();}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{246     \textcolor{keywordtype}{void} rollup\_down();}
+\DoxyCodeLine{247 }
+\DoxyCodeLine{248 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{254     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_a13b85d7a72e8c8955e0aa436e5405691}{handleEdgeHit}}();}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{261     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frameless_window_ab7d75713c918370eff364121174641c3}{moveWindow}}(QMouseEvent *event);}
+\DoxyCodeLine{262 \};}
+\DoxyCodeLine{263 }
+\DoxyCodeLine{264 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// FRAMELESSWINDOW\_H}}
+
+\end{DoxyCode}
