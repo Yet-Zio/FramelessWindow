@@ -199,7 +199,7 @@ void FramelessWindow::setTitleBarMode(TitleMode flag){
             break;
         case FullTitle:
             ui->appTool->setVisible(true);
-            ui->rollBtn.setVisible(true);
+            ui->rollBtn->setVisible(true);
             ui->minBtn->setVisible(true);
             ui->maxBtn->setVisible(true);
             ui->closeBtn->setVisible(true);
